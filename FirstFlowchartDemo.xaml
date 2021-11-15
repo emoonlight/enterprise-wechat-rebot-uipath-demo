@@ -1,0 +1,94 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="FirstFlowchartDemo" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1207,701" sap2010:WorkflowViewState.IdRef="FirstFlowchartDemo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="FirstFlowchartDemo" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,133.5</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,133.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,53</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: 企业微信" sap:VirtualizedContainerService.HintSize="434,381" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="68e6ef89-dd2e-49c5-b777-ac3421ebff96" Version="V1">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,86" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="2200, -382, 859, 650" FilePath="C:\Program Files (x86)\WXWork\wxwork.exe" IconBase64="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" InformativeScreenshot="a1184e37c56535c159df7f52a7a02e1f.png" Selector="&lt;wnd app='wxwork.exe' cls='WeWorkWindow' title='企业微信'/&gt;" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </FlowStep>
+  </Flowchart>
+</Activity>
